@@ -1,0 +1,60 @@
+@import "./modules/cards.css";
+@import "./modules/buttons.css";
+@import "./modules/nav.css";
+@import "./modules/menu.css";
+@import "./modules/header.css";
+@import "./modules/layout.css";
+@import "./modules/variables.css";
+
+.body {
+    background-color: var(--primary-theme-color);
+    color: var(--primary-text-color);
+    font-family: var(--primary-font-family);
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+/* vh altura de la ventana grafica */
+.section--hero {
+    display: flex;
+    align-items: center;
+    background-image: url(https://i.postimg.cc/7PJV8Dp8/react-01-01-wpo.webp);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* limitar el ancho */
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: block;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}

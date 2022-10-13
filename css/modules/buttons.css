@@ -1,0 +1,23 @@
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+.button {
+    background-color: var(--primary-theme-color);
+    border: 0.0625rem solid var(--primary-theme-color);
+    border-radius: 0.5rem;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 0.875rem;
+    font-family: monospace;
+    text-decoration: none;
+    padding: 0.25em 1em;
+    cursor: pointer;
+    transition: box-shadow 0.25, filter 0.25s;
+}
+.+
+@media (min-width: 768px) {
+    .button {
+        font-size: 1rem;
+    }
+}
