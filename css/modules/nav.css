@@ -1,3 +1,13 @@
+.nav {
+    --translate-x-menu: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav--open {
+  --translate-x-menu: 0;
+}
+
 .nav__logo {
     display: block;
     border-radius: 50%;
@@ -5,3 +15,22 @@
     height: 48px;
     object-fit: cover;
 }
+
+.nav__icon {
+  display: flex;
+  background-color: transparent;
+  border: 0;
+  color: var(--primary-text-color);
+  font-size: 1.75rem;
+  padding: 0;
+  filter: contrast(0.75);
+  cursor: pointer;
+  transition: filter 0.25s;
+}
+
+.nav__icon:hover {
+  filter: contrast(1);
+}
+
+
+

@@ -1,9 +1,9 @@
 .card {
-    border-radius: 0.5rem;
     box-shadow: 0 0 0.125rem 0.125rem var(--primary-shadow-color);
+    border-radius: 0.5rem;
+    max-width: 320px;
     overflow: hidden;
     transition: box-shadow 0.25s;
-
 }
 .card:hover {
     box-shadow: 0 0 0.125rem 0.125rem var(--primary-highlight);
@@ -18,19 +18,25 @@
     padding: 1rem;
 }
 .card__title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 900;
     margin: 0;
 }
 .card__subtitle{
+    font-weight: 800;
     font-size: 1rem;
     margin: 0;
 }
 .card__text {
-   display: none; 
+    font-weight: 500;
+    display: none;
 }
 
 
 @media (min-width: 768px) {
+    .card {
+        max-width: 512px;
+    }
     .card__title {
         font-size: 1.5rem;
     }
@@ -40,5 +46,7 @@
     }
     .card__text {
         display: flex;
+        font-size: 1rem;
+        margin: 0;
     }
 }
